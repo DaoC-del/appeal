@@ -1,0 +1,11 @@
+<div class="carousel-container">
+  <img [src]="prevImage" class="thumbnail" alt="Previous Image Thumbnail">
+
+  <div class="carousel-slide">
+    <button class="prev-btn" (click)="prev()">⟨</button>
+    <img [src]="currentImage" alt="Slide Image">
+    <button class="next-btn" (click)="next()">⟩</button>
+  </div>
+
+  <img [src]="nextImage" class="thumbnail" alt="Next Image Thumbnail">
+</div>

@@ -1,0 +1,33 @@
+.carousel-container {
+  position: relative;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.thumbnail {
+  width: 100px;
+  opacity: 0.5;
+}
+
+.prev-btn, .next-btn {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+}
