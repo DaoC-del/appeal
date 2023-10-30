@@ -10,6 +10,6 @@ export class ImageService {
   constructor(private http: HttpClient) { }
 
   getImages(): Observable<any> {
-    return this.http.get('/assets/gifs.json');
+    return this.http.get('appeal/assets/gifs.json');
   }
 }
