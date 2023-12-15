@@ -2,6 +2,7 @@
   position: fixed;
   /*top: 0;*/
   /*left: 0;*/
+  /*pointer-events: none;*/
   width: 100%; /* 调整容器的宽度，不要超出页面 */
   height: 100%; /* 调整容器的高度，不要超出页面 */
   z-index: 0;
@@ -11,6 +12,8 @@
   position: absolute;
   top: 0;
   width: 100%;
+  height: auto;
+  /*pointer-events: none;*/
   z-index: 1;
 }
 

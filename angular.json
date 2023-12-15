@@ -34,6 +34,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/appeal/",
               "budgets": [
                 {
                   "type": "initial",
@@ -54,7 +55,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -78,7 +85,8 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder":
+          "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
               "zone.js",
@@ -98,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "93286fc5-f925-4a03-b4de-f150036d8c3e"
   }
 }
